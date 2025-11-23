@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: #0b1020; color: #e7eaf6; }
+
+.container { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+
+h1 { font-size: 28px; margin: 0 0 6px; }
+.subtitle { margin: 0 0 24px; color: #aab0c3; }
+
+.inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+.field { display: flex; flex-direction: column; gap: 8px; }
+label { color: #cbd2e3; font-weight: 600; }
+textarea { background: #121a33; color: #e7eaf6; border: 1px solid #1f2a4d; border-radius: 8px; padding: 12px; min-height: 120px; resize: vertical; }
+textarea:focus { outline: 2px solid #3a6ff7; border-color: #3a6ff7; }
+
+.cards { display: grid; grid-template-columns: 180px 1fr; gap: 16px; margin: 16px 0 24px; }
+.card { background: #0f1730; border: 1px solid #1f2a4d; border-radius: 12px; padding: 14px 16px; }
+.card-title { color: #aab0c3; font-size: 12px; margin-bottom: 6px; }
+.card-value { font-weight: 700; font-size: 22px; }
+.card-value.seq { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; word-break: break-word; }
+
+h2 { font-size: 18px; margin: 20px 0 8px; color: #cbd2e3; }
+.table-wrapper { overflow: auto; max-height: 420px; border: 1px solid #1f2a4d; border-radius: 8px; }
+.dp-table { border-collapse: collapse; width: 100%; font-family: ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono"; }
+.dp-table td { border: 1px solid #1f2a4d; padding: 4px 6px; text-align: right; color: #c7cff2; }
+
+footer { margin-top: 24px; }
+footer a { color: #8fb1ff; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+@media (max-width: 720px) {
+  .inputs { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+}
